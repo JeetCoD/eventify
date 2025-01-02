@@ -7,6 +7,7 @@ import User from "@/lib/database/models/user.model";
 import Order from "../database/models/order.model";
 import Event from "@/lib/database/models/event.model";
 import { handleError } from "@/lib/utils";
+import { CreateUserParams, UpdateUserParams } from "@/types";
 
 //we will need types for the user and the data that we are using so for that we made types/index.ts file in which all the types resides.
 
