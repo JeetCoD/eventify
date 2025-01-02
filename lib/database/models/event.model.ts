@@ -1,7 +1,7 @@
 import { model, models, Schema } from "mongoose";
 
 //we will need to reference the schema property in the frontend application, so we will use the typescript interface that will help us to know which properties we need to use, if we miss any.
-export interface IEvent extends Document {
+export interface IEvent extends Omit<Document, "location"> {
   _id: string;
   title: string;
   description?: string;
