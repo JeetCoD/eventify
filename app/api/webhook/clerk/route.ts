@@ -7,7 +7,7 @@ import { NextResponse } from "next/server";
 type UserData = {
   id: string;
   email_addresses?: Array<{ email_address: string }>;
-  image_url?: string;
+  image_url: string;
   first_name?: string;
   last_name?: string;
   username?: string;
@@ -75,8 +75,8 @@ export async function POST(req: Request) {
           clerkId: id,
           email: email_addresses[0]?.email_address || "",
           username: username,
-          firstname: first_name,
-          lastname: last_name,
+          firstName: first_name,
+          lastName: last_name,
           photo: image_url,
         };
 
